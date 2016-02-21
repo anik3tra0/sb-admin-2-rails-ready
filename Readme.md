@@ -1,6 +1,6 @@
-== README
+### README
 
-[![GitHub version](https://badge.fury.io/gh/anik3tra0%2Fsb-admin-2-rails-ready@2x.png)](https://badge.fury.io/gh/anik3tra0%2Fsb-admin-2-rails-ready)
+[![GitHub version](https://badge.fury.io/gh/anik3tra0%2Fsb-admin-2-rails-ready.svg)](https://badge.fury.io/gh/anik3tra0%2Fsb-admin-2-rails-ready)
 
 This is a bare bones Rails 4 project that uses the [sb Admin 2](http://startbootstrap.com/template-overviews/sb-admin-2/) bootstrap 3 theme. It's a nice looking dashboard style interface. 
 
