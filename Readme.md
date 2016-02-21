@@ -3,6 +3,7 @@
 [![GitHub version](https://badge.fury.io/gh/anik3tra0%2Fsb-admin-2-rails-ready.svg)](https://badge.fury.io/gh/anik3tra0%2Fsb-admin-2-rails-ready)
 
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://anik3tra0.mit-license.org)
+
 This is a bare bones Rails 4 project that uses the [SB Admin 2](http://startbootstrap.com/template-overviews/sb-admin-2/) Bootstrap 3 theme. It's a nice looking static dashboard style interface. 
 
 This is a quick way to get a rails app with a dashboard up and running. Just clone and bundle install. You can download the SB Admin 2 Theme for documentation on how to use it's features.
