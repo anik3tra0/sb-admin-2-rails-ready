@@ -25,7 +25,25 @@
 </head>
 
 <body>
-
+<script>
+  <% flash.each do |key,value| %>
+    <%if key == "alert"%>
+      $.notify({
+        title: '<strong>Heads up!</strong>',
+        message: '<%= value %>'
+      },{
+        type: 'danger'
+      });
+    <%else%>
+      $.notify({
+        title: '<strong>Heads up!</strong>',
+        message: '<%= value %>'
+      },{
+        type: 'success'
+      });
+    <%end%>
+  <% end %>
+</script>
   <%= yield %>
 
 </body>
