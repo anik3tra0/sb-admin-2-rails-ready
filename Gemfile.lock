@@ -151,11 +151,7 @@ GEM
     uglifier (2.7.2)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
-<<<<<<< HEAD
-    warden (1.2.4)
-=======
     warden (1.2.6)
->>>>>>> 99ade4e770ef7098c7b0d8acaab9f73a8aa81473
       rack (>= 1.0)
     web-console (2.3.0)
       activemodel (>= 4.0)
