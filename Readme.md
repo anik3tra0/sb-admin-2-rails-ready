@@ -50,4 +50,5 @@ All tasks that needed to be accomplished should be set below
 - Resolve Reported Bugs and declare stable
 
 # Contributors
-- Athul Santosh (Ruby on Rails Developer at [![Relyonsoft](http://relyonsoft.com/])
+- Athul Santosh @hackodezo
+- Aniket Rao @anik3tra0
