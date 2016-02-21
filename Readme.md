@@ -20,3 +20,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 #### Added
 
 - SB Admin 2 Theme Integrated
+- Added Devise User Model
+- Styled Devise Views
+- Devise Confirmation Feature Enabled
+- Mailer Config Files Added (Dev Environment Only)
+- Tested 200 OK
