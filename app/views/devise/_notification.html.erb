@@ -1,0 +1,14 @@
+<%if devise_error_messages!.present? %>
+<script type="text/javascript" charset="utf-8">
+  s=$("#error_explanation").text().split(",")
+  for (i = 0; i < s.length; i++) {
+    $.notify({
+        title: '<strong>Heads up!</strong>',
+        message: s[i].replace(/[^a-zA-Z ]/g, "")
+        }, {
+        type: 'danger'
+        });
+    }
+
+</script>
+<%end%>
