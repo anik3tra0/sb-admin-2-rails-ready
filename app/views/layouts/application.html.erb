@@ -24,28 +24,48 @@
 
 </head>
 
-<body>
-<script>
-  <% flash.each do |key,value| %>
-    <%if key == "alert"%>
-      $.notify({
-        title: '<strong>Heads up!</strong>',
-        message: '<%= value %>'
-      },{
-        type: 'danger'
-      });
-    <%else%>
-      $.notify({
-        title: '<strong>Heads up!</strong>',
-        message: '<%= value %>'
-      },{
-        type: 'success'
-      });
-    <%end%>
-  <% end %>
-</script>
-  <%= yield %>
+  <body>
+  <script>
+    <% flash.each do |key,value| %>
+      <%if key == "alert"%>
+        $.notify({
+          title: '<strong>Heads up!</strong>',
+          message: '<%= value %>'
+        },{
+          type: 'danger'
+        });
+      <%else%>
+        $.notify({
+          title: '<strong>Heads up!</strong>',
+          message: '<%= value %>'
+        },{
+          type: 'success'
+        });
+      <%end%>
+    <% end %>
+  </script>
+    <div id="wrapper">
+      <!-- Navigation -->
+      <% if user_signed_in? %>
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="<%= root_path %>">SB ADMIN</a>
+          </div>
 
-</body>
+          <!-- /.navbar-header -->
+
+          <%= render 'top_nav' %>
+          <%= render 'sidebar_nav' %>
+        </nav>
+      <% end %>
+      <%= yield %>
+    </div>
+  </body>
 
 </html>
