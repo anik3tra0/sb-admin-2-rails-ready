@@ -56,13 +56,12 @@
               <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="<%= root_path %>">SB ADMIN</a>
-
           </div>
-          <%if current_user.role == "admin"%>
+
           <!-- /.navbar-header -->
-            <%= render 'top_nav' %>
-            <%= render 'sidebar_nav' %>
-          <%end%>
+
+          <%= render 'top_nav' %>
+          <%= render 'sidebar_nav' %>
         </nav>
       <% end %>
       <%= yield %>

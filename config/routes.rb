@@ -1,16 +1,23 @@
 Rails.application.routes.draw do
 
+
+  get 'welcome/index'
+
+  namespace :admin do
+    get 'dashboard/index'
+  end
+
   scope "/admin" do
     devise_for :users
   end
 
-  get '/admin' => 'dashboard#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'dashboard#index'
+
+  root 'welcome#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
